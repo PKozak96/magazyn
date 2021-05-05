@@ -16,7 +16,7 @@ namespace WypozyczalniaAut
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Wstep());
+            Application.Run(new Users());
         }
     }
 }

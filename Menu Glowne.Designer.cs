@@ -30,8 +30,9 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Menu_Glowne));
             this.panel1 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.Mycar = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
@@ -39,7 +40,6 @@
             this.button4 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
-            this.label3 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Mycar)).BeginInit();
             this.SuspendLayout();
@@ -56,15 +56,16 @@
             this.panel1.Size = new System.Drawing.Size(873, 100);
             this.panel1.TabIndex = 0;
             // 
-            // label1
+            // label3
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Arial Narrow", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label1.Location = new System.Drawing.Point(300, 19);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(337, 29);
-            this.label1.TabIndex = 2;
-            this.label1.Text = "WYPOŻYCZALNIA SAMOCHODÓW";
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Arial Narrow", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label3.Location = new System.Drawing.Point(835, 9);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(26, 29);
+            this.label3.TabIndex = 3;
+            this.label3.Text = "X";
+            this.label3.Click += new System.EventHandler(this.Label3_Click);
             // 
             // label2
             // 
@@ -75,6 +76,16 @@
             this.label2.Size = new System.Drawing.Size(139, 29);
             this.label2.TabIndex = 2;
             this.label2.Text = "Menu Główne";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Arial Narrow", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label1.Location = new System.Drawing.Point(300, 19);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(337, 29);
+            this.label1.TabIndex = 2;
+            this.label1.Text = "WYPOŻYCZALNIA SAMOCHODÓW";
             // 
             // Mycar
             // 
@@ -93,12 +104,13 @@
             // 
             this.button1.BackColor = System.Drawing.SystemColors.ControlDark;
             this.button1.Font = new System.Drawing.Font("Arial Narrow", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.button1.Location = new System.Drawing.Point(33, 124);
+            this.button1.Location = new System.Drawing.Point(25, 124);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(137, 56);
             this.button1.TabIndex = 7;
             this.button1.Text = "SAMOCHODY";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.Button1_Click);
             // 
             // button2
             // 
@@ -149,17 +161,6 @@
             this.button6.TabIndex = 12;
             this.button6.Text = "WYLOGUJ";
             this.button6.UseVisualStyleBackColor = false;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Arial Narrow", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label3.Location = new System.Drawing.Point(835, 9);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(26, 29);
-            this.label3.TabIndex = 3;
-            this.label3.Text = "X";
-            this.label3.Click += new System.EventHandler(this.Label3_Click);
             // 
             // Menu_Glowne
             // 

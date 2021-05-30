@@ -33,13 +33,13 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.Mycar = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
+            this.Mycar = new Guna.UI2.WinForms.Guna2CirclePictureBox();
+            this.button7 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Mycar)).BeginInit();
             this.SuspendLayout();
@@ -53,14 +53,14 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(873, 100);
+            this.panel1.Size = new System.Drawing.Size(969, 100);
             this.panel1.TabIndex = 0;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Arial Narrow", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label3.Location = new System.Drawing.Point(835, 9);
+            this.label3.Location = new System.Drawing.Point(929, 9);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(26, 29);
             this.label3.TabIndex = 3;
@@ -71,7 +71,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Arial Narrow", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label2.Location = new System.Drawing.Point(369, 58);
+            this.label2.Location = new System.Drawing.Point(420, 58);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(139, 29);
             this.label2.TabIndex = 2;
@@ -81,24 +81,11 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Arial Narrow", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label1.Location = new System.Drawing.Point(300, 19);
+            this.label1.Location = new System.Drawing.Point(321, 19);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(337, 29);
             this.label1.TabIndex = 2;
             this.label1.Text = "WYPOŻYCZALNIA SAMOCHODÓW";
-            // 
-            // Mycar
-            // 
-            this.Mycar.FillColor = System.Drawing.Color.Transparent;
-            this.Mycar.Image = ((System.Drawing.Image)(resources.GetObject("Mycar.Image")));
-            this.Mycar.Location = new System.Drawing.Point(147, 203);
-            this.Mycar.Name = "Mycar";
-            this.Mycar.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.Mycar.ShadowDecoration.Parent = this.Mycar;
-            this.Mycar.Size = new System.Drawing.Size(532, 341);
-            this.Mycar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.Mycar.TabIndex = 6;
-            this.Mycar.TabStop = false;
             // 
             // button1
             // 
@@ -121,6 +108,7 @@
             this.button2.TabIndex = 8;
             this.button2.Text = "KLIENCI";
             this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.Button2_Click);
             // 
             // button3
             // 
@@ -131,6 +119,7 @@
             this.button3.TabIndex = 9;
             this.button3.Text = "WYPOŻYCZENIA";
             this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.Button3_Click);
             // 
             // button4
             // 
@@ -141,33 +130,49 @@
             this.button4.TabIndex = 10;
             this.button4.Text = "ZWROTY";
             this.button4.UseVisualStyleBackColor = false;
+            this.button4.Click += new System.EventHandler(this.Button4_Click);
             // 
             // button5
             // 
             this.button5.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.button5.Location = new System.Drawing.Point(703, 124);
+            this.button5.Location = new System.Drawing.Point(659, 124);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(145, 56);
             this.button5.TabIndex = 11;
             this.button5.Text = "UŻYTKOWNICY";
             this.button5.UseVisualStyleBackColor = false;
+            this.button5.Click += new System.EventHandler(this.Button5_Click);
             // 
-            // button6
+            // Mycar
             // 
-            this.button6.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.button6.Location = new System.Drawing.Point(356, 555);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(124, 47);
-            this.button6.TabIndex = 12;
-            this.button6.Text = "WYLOGUJ";
-            this.button6.UseVisualStyleBackColor = false;
+            this.Mycar.FillColor = System.Drawing.Color.Transparent;
+            this.Mycar.Image = ((System.Drawing.Image)(resources.GetObject("Mycar.Image")));
+            this.Mycar.Location = new System.Drawing.Point(178, 195);
+            this.Mycar.Name = "Mycar";
+            this.Mycar.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            this.Mycar.ShadowDecoration.Parent = this.Mycar;
+            this.Mycar.Size = new System.Drawing.Size(626, 341);
+            this.Mycar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.Mycar.TabIndex = 6;
+            this.Mycar.TabStop = false;
+            // 
+            // button7
+            // 
+            this.button7.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.button7.Location = new System.Drawing.Point(810, 124);
+            this.button7.Name = "button7";
+            this.button7.Size = new System.Drawing.Size(145, 56);
+            this.button7.TabIndex = 13;
+            this.button7.Text = "STATYSTYKI";
+            this.button7.UseVisualStyleBackColor = false;
+            this.button7.Click += new System.EventHandler(this.Button7_Click);
             // 
             // Menu_Glowne
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(873, 614);
-            this.Controls.Add(this.button6);
+            this.ClientSize = new System.Drawing.Size(969, 571);
+            this.Controls.Add(this.button7);
             this.Controls.Add(this.button5);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
@@ -198,6 +203,6 @@
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.Button button7;
     }
 }
